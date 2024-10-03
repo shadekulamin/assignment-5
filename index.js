@@ -109,9 +109,17 @@ document.getElementById('quota-donation').addEventListener('click',function(even
     }
     else{'invalid'}
 })
+
+// switch button--------------
+
 document.getElementById('donationBtn').addEventListener('click', function(){
     showSectionById('donation-section')
 })
 document.getElementById('historyBtn').addEventListener('click', function(){
     showSectionById('history-section')
+})
+
+// home blog----------------
+document.getElementById('home').addEventListener('click', function(){
+    window.location.href='/home.html';
 })
