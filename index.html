@@ -11,82 +11,89 @@
 <body>
     <main>
         <section class="bg-red-50">
-            <nav class="flex justify-between mx-16 py-10">
-                <div><button class="btn btn-active bg-lime-300 text-lg">Default</button></div>
-                <div class="flex items-center gap-3 text-lg"><img src="assets/logo.png"><p>Donate Bangladesh</p></div>
-                <div class="flex items-center gap-3 text-lg"><img src="assets/coin.png"><p>5500 BDT</p></div>
+            <nav class="grid grid-cols-1 lg:grid-cols-3 mx-1 lg:mx-40 items-center justify-between  py-10">
+                <div><button class="btn btn-active bg-lime-300 text-lg mb-8 lg:mb-0">Blog</button></div>
+                <div class="grid grid-cols-1 lg:flex lg:gap-3  items-center text-lg mb-8 lg:mb-0"><img src="assets/logo.png"><p>Donate Bangladesh</p></div>
+                <div class="grid grid-cols-1 lg:flex lg:gap-3 items-center  text-lg mb-8 lg:mb-0"><img src="assets/coin.png"><p><span id="main-balance">9000</span> BDT</p></div>
             </nav>
         </section>
         <section>
-            <div class="text-center py-10">
-                <button class="btn text-lg bg-lime-600">Donation</button>
-                <button class="btn text-lg">History</button>
+            <div class="text-center mx-0 py-10">
+                <button class="btn text-lg bg-lime-600" id="donationBtn">Donation</button>
+                <button class="btn text-lg" id="historyBtn">History</button>
             </div>
             <div class="divider"></div>
         </section>
-        <section>
+        <section  id="donation-section" >
             <div>
-                <div class="flex mx-16 pt-2 gap-5 bg-slate-100 mb-6 rounded-xl">
+                <div class="grid grid-cols-1 lg:flex mx-1  lg:mx-16 pt-2 lg:gap-5 bg-slate-100 mb-6 rounded-xl">
                     <div><img src="assets/noakhali.png"></div>
-                    <div class="w-[400px]">
-                        <button class="btn text-lg"><img src="assets/coin.png">0 BDT</button>
+                    <div class=''>
+                        <button class="btn text-lg"><img src="assets/coin.png"><span id="fund-for-noakhali">5890</span> BDT</button>
                         <h2 class="text-2xl font-semibold">Donate for Flood at Noakhali, Bangladesh</h2>
-                        <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes 
+                        <p class="text-sm w-80"> The recent floods in Noakhali have caused significant damage to homes 
                              infrastructure. Your donation will help provide essential supplies and 
                               to those affected by this disaster. Every contribution, big or small,
                                makes  difference. Please join us in supporting the relief efforts 
                             and making a positive impact on the lives of those in need.
                         </p>
                         <br>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="Type here" id="noakhali-input" class="input input-bordered w-full max-w-xs" />
                         <br><br>
-                        <button class="btn text-lg bg-lime-600">Donation</button>
+                        <button class="btn text-lg bg-lime-600" id="donation-btn">Donation</button>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div class="flex mx-16 pt-2 gap-5 bg-slate-100 mb-6 rounded-xl">
-                    <div><img src="assets/noakhali.png"></div>
+                <div class="grid grid-cols-1 lg:flex mx-1 lg:mx-16 pt-2 gap-5 bg-slate-100 mb-6 rounded-xl">
+                    <div><img src="assets/feni.png"></div>
                     <div class="w-[400px]">
-                        <button class="btn text-lg"><img src="assets/coin.png">600 BDT</button>
+                        <button class="btn text-lg"><img src="assets/coin.png"  ><span id="fund-for-feni">980</span> BDT</button>
                         <h2 class="text-2xl font-semibold">Donate for Flood Relief in Feni,Bangladesh</h2>
-                        <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes 
+                        <p class="text-sm w-80"> The recent floods in Noakhali have caused significant damage to homes 
                              infrastructure. Your donation will help provide essential supplies and 
                               to those affected by this disaster. Every contribution, big or small,
                                makes  difference. Please join us in supporting the relief efforts 
                             and making a positive impact on the lives of those in need.
                         </p>
                         <br>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="Type here" id="feni-input" class="input input-bordered w-full max-w-xs" />
                         <br><br>
-                        <button class="btn text-lg bg-lime-600">Donation</button>
+                        <button class="btn text-lg bg-lime-600" id="donation-btn-feni">Donation</button>
                     </div>
                 </div>
             </div>
 
             <div>
-                <div class="flex mx-16 pt-2 gap-5 bg-slate-100 mb-6 rounded-xl">
-                    <div><img src="assets/noakhali.png"></div>
+                <div class="grid grid-cols-1 lg:flex mx-1 lg:mx-16 pt-2 gap-5 bg-slate-100 mb-6 rounded-xl">
+                    <div><img src="assets/quota-protest.png"></div>
                     <div class="w-[400px]">
-                        <button class="btn text-lg"><img src="assets/coin.png">2400 BDT</button>
+                        <button class="btn text-lg" ><img src="assets/coin.png"><span id="fund-for-quota">2400</span> BDT</button>
                         <h2 class="text-2xl font-semibold">Aid for Injured in the Quota Movement</h2>
-                        <p class="text-sm"> The recent floods in Noakhali have caused significant damage to homes 
+                        <p class="text-sm w-80"> The recent floods in Noakhali have caused significant damage to homes 
                              infrastructure. Your donation will help provide essential supplies and 
                               to those affected by this disaster. Every contribution, big or small,
                                makes  difference. Please join us in supporting the relief efforts 
                             and making a positive impact on the lives of those in need.
                         </p>
                         <br>
-                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                        <input type="text" placeholder="Type here" id="quota-input" class="input input-bordered w-full max-w-xs" />
                         <br><br>
-                        <button class="btn text-lg bg-lime-600">Donation</button>
+                        <button class="btn text-lg bg-lime-600" id="quota-donation">Donation</button>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <section id="history-section" class="hidden mx-auto">
+    <div id="transaction-container" class="w-7/12 mx-auto">
+
+    </div>
+        </section>
 
     </main>
+    <script src="common.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
