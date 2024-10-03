@@ -13,19 +13,3 @@ function showSectionById(id){
     document.getElementById('history-section').classList.add('hidden')
     document.getElementById(id).classList.remove('hidden')
 }
-
-
-
-function getHistory(){
-    const div =document.createElement('div')
-    div.classList.add('bg-slate-200');
-    div.classList.add('px-8')
-    div.classList.add('py-8')
-    div.classList.add('rounded-xl')
-    div.innerHTML=
-    `
-    <h4>cash out</h4>
-    <p>${total} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-    `
-    document.getElementById('transaction-container').appendChild(div)
-}
