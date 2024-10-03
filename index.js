@@ -121,5 +121,5 @@ document.getElementById('historyBtn').addEventListener('click', function(){
 
 // home blog----------------
 document.getElementById('home').addEventListener('click', function(){
-    window.location.href='/home.html';
+    window.location.href='/blog.html';
 })
